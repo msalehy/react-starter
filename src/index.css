@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  div button {
+    -webkit-tap-highlight-color: transparent;
+  }
+  h1 {
+    @apply text-2xl;
+  }
+  .btn-generic {
+    @apply bg-darkblue px-6 py-2 rounded-md opacity-100 hover:opacity-80  text-base text-white font-medium outline-none focus:outline-none flex flex-row items-center space-x-2;
+  }
+  .btn-generic-gray {
+    @apply bg-gray-200 px-6 py-2 rounded-md hover:bg-gray-300  text-base text-gray-900 font-medium outline-none focus:outline-none flex flex-row items-center space-x-2;
+  }
+  .btn-generic-white {
+    @apply bg-white px-6 py-2 rounded-md hover:bg-blue-50  hover:text-blue-600  text-base text-gray-900 font-medium outline-none focus:outline-none flex flex-row items-center space-x-2;
+  }
+
+  .btn-generic-disabled {
+    @apply bg-gray-200 px-6 py-2 rounded-md text-base text-gray-400 font-medium outline-none focus:outline-none flex flex-row items-center space-x-2;
+  }
+
+  .btn-outline-small {
+    @apply px-3 py-1 border-gray-900 border hover:bg-gray-200   rounded-md text-sm font-medium text-gray-900  outline-none focus:outline-none flex flex-row items-center space-x-2 disabled:opacity-50;
+  }
+  .btn-outline {
+    @apply px-6 py-2 border-gray-900 border-2 hover:bg-gray-300   rounded-full text-base text-gray-900 font-normal outline-none focus:outline-none flex flex-row items-center space-x-2 disabled:opacity-50;
+  }
+  .btn-outline-red {
+    @apply px-6 py-2 border-red-700 border-2 hover:bg-red-100   rounded-full text-base text-red-700 font-normal outline-none focus:outline-none flex flex-row items-center space-x-2 disabled:opacity-50;
+  }
+  .btn-generic-small {
+    @apply bg-indigo-700 px-3 py-1 rounded-md text-xs text-white font-medium outline-none focus:outline-none flex flex-row items-center space-x-2 disabled:opacity-50;
+  }
+  .btn-cancel {
+    @apply bg-gray-200 hover:bg-gray-300 px-6 py-2 rounded-md text-sm text-gray-900 font-medium focus:outline-none flex flex-row items-center space-x-2;
+  }
+  .btn-danger {
+    @apply bg-red-600 px-6 py-2 rounded-md text-sm text-white font-medium focus:outline-none flex flex-row items-center space-x-2 hover:bg-red-700;
+  }
+  .btn-cancel-small {
+    @apply bg-gray-200 hover:bg-gray-300 px-3 py-1  rounded-full text-sm text-gray-900 font-medium focus:outline-none flex flex-row items-center space-x-2;
+  }
+  .btn-danger-small {
+    @apply bg-red-600 px-3 py-1  rounded-full text-xs text-white font-medium focus:outline-none flex flex-row items-center space-x-2;
+  }
+  .form-title {
+    @apply text-sm text-gray-700 font-bold;
+  }
+  .form-title-large {
+    @apply text-2xl text-gray-900 font-bold;
+  }
+  .form-title-xlarge {
+    @apply text-4xl text-gray-900 font-bold;
+  }
+  .form-title-medium {
+    @apply text-xl text-gray-900 font-bold;
+  }
+  .form-input-text {
+    @apply focus:border-darkblue border-gray-400   block w-48 shadow-sm h-12 text-sm text-gray-600 border rounded-md px-4 outline-none;
+  }
+  .form-input-text-error {
+    @apply focus:border-red-600 border-red-600   block w-48 shadow-sm h-10 text-sm text-gray-700 border rounded-md px-4 outline-none;
+  }
+
+  .text-body {
+    @apply text-base text-gray-700 font-normal;
+  }
+  .a-link {
+    @apply font-medium no-underline hover:underline cursor-pointer;
+  }
+
+  .form-radio {
+    @apply h-6 w-6   cursor-pointer text-green-500;
+  }
+  .form-radio-small {
+    @apply h-4 w-4   cursor-pointer text-green-500;
+  }
+
+  span {
+    @apply font-body;
+  }
+
+  td {
+    @apply font-body text-sm text-gray-700;
+  }
+
+  .toggle-checkbox:checked {
+    @apply: right-0 border-indigo-700;
+    right: 0;
+    border-color: #68d391;
+  }
+  .toggle-checkbox:checked + .toggle-label {
+    @apply: bg-indigo-700;
+    background-color: #68d391;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  /* CircularStd @font-face kit */
+}
+.animate-float {
+  animation: float 3s infinite;
+}
+
+.animate-fade {
+  animation: opas ease-in-out 0.5s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+    animation-timing-function: ease-in-out;
+  }
+
+  50% {
+    transform: translateY(-20px);
+    animation-timing-function: ease-in-out;
+  }
+
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-in-out;
+  }
+}
