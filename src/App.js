@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage";
 import UserPage from "./pages/UserPage";
 function App() {
   return (
-    <div className="flex flex-col w-screen h-screen bg-gray-100  p-4 items-center">
+    <div className="flex flex-col w-screen h-screen bg-green-500  p-4 items-center">
       React template with Tailwind, router , useContext
       <AppProvider>
         <Router>
